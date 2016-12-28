@@ -18,7 +18,7 @@ class TerminalsController extends CController
 
     }
 
-    public function actionAuth($imei, $password)
+    public function actionLogin($imei, $password)
     {
         return User::auth($imei, $password);
     }
