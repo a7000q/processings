@@ -12,7 +12,7 @@ class TerminalsController extends CController
     public function behaviors()
     {
         $behaviors = parent::behaviors();
-        $behaviors['authenticator']['except'] = ['auth'];
+        $behaviors['authenticator']['except'] = ['login'];
 
         return $behaviors;
 
